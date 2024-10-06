@@ -20,7 +20,9 @@
         </div>
         <div class="flex items-center gap-3">
           <img src="./assets/coin.png" alt="" />
-          <h1 class="font-semibold text-2xl text-gray-400">5050 BDT</h1>
+          <h1 id="bd-balance" class="font-semibold text-2xl text-gray-400">
+            5050 BDT
+          </h1>
         </div>
       </div>
     </nav>
@@ -46,7 +48,12 @@
               class="flex items-center gap-3 bg-slate-300 font-semibold text-2xl border px-6 py-2 rounded-lg"
             >
               <img src="./assets/coin.png" alt="" />
-              <h1 class="font-semibold text-2xl text-gray-400">0 BDT</h1>
+              <h1
+                id="already-donate"
+                class="font-semibold text-2xl text-gray-400"
+              >
+                0 BDT
+              </h1>
             </button>
             <h1 class="font-semibold text-2xl">
               Donate for Flood at Noakhali, Bangladesh
@@ -60,12 +67,16 @@
               lives of those in need.
             </p>
             <input
+              id="forNoakhali"
               type="text"
+              autocomplete="off"
               placeholder="  Write donation Amount"
               class="border rounded-md w-full h-10"
+              required
             />
             <button
-              class="font-semibold text-2xl bg-orange-300 px-6 py-2 rounded-lg w-full"
+              id="donate-btn-1"
+              class="font-semibold text-2xl bg-orange-500 px-6 py-2 rounded-lg w-full"
             >
               Donate Now
             </button>
@@ -82,26 +93,35 @@
               class="flex items-center gap-3 bg-slate-300 font-semibold text-2xl border px-6 py-2 rounded-lg"
             >
               <img src="./assets/coin.png" alt="" />
-              <h1 class="font-semibold text-2xl text-gray-400">4900 BDT</h1>
+              <h1
+                id="forFeniAlredy"
+                class="font-semibold text-2xl text-gray-400"
+              >
+                4900 BDT
+              </h1>
             </button>
             <h1 class="font-semibold text-2xl">
               Donate for Flood Relief in Feni,Bangladesh
             </h1>
             <p>
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
+              The recent floods in Feni have caused significant damage to homes
+              infrastructure. Your donation will help provide essential supplies
+              and to those affected by this disaster. Every contribution, big or
+              small, makes difference. Please join us in supporting the relief
+              efforts and making a positive impact on the lives of those in
+              need.
             </p>
             <input
               type="text"
+              id="forFeni"
               placeholder="  Write donation Amount"
+              autocomplete="off"
               class="border rounded-md w-full h-10"
+              required
             />
             <button
-              class="font-semibold text-2xl bg-orange-300 px-6 py-2 rounded-lg w-full"
+              id="donate-btn-2"
+              class="font-semibold text-2xl bg-orange-500 px-6 py-2 rounded-lg w-full"
             >
               Donate Now
             </button>
@@ -118,26 +138,37 @@
               class="flex items-center gap-3 bg-slate-300 font-semibold text-2xl border px-6 py-2 rounded-lg"
             >
               <img src="./assets/coin.png" alt="" />
-              <h1 class="font-semibold text-2xl text-gray-400">1000 BDT</h1>
+              <h1
+                id="already-qouta"
+                class="font-semibold text-2xl text-gray-400"
+              >
+                1000 BDT
+              </h1>
             </button>
             <h1 class="font-semibold text-2xl">
               Aid for Injured in the Quota Movement
             </h1>
             <p>
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
+              The 2024 Bangladesh quota reform movement, also known as the July
+              Revolution, was a series of anti-government and pro-democracy
+              protests in Bangladesh, spearheaded primarily by university
+              students. Initially focused on restructuring quota-based systems
+              for government job recruitment, the movement expanded against what
+              many perceive as an authoritarian government when they carried out
+              the July massacre of protestors and civilians, most of whom were
+              students.
             </p>
             <input
               type="text"
+              id="forQouta"
               placeholder="  Write donation Amount"
+              autocomplete="off"
+              required
               class="border rounded-md w-full h-10"
             />
             <button
-              class="font-semibold text-2xl bg-orange-300 px-6 py-2 rounded-lg w-full"
+              id="donate-btn-3"
+              class="font-semibold text-2xl bg-orange-500 px-6 py-2 rounded-lg w-full"
             >
               Donate Now
             </button>
@@ -148,7 +179,8 @@
     <footer>
       <div class="h-28 bg-orange-100 mt-24"></div>
     </footer>
+    <script src="./js/history.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/utilies.js"></script>
   </body>
-
-  <script src="./js/history.js"></script>
 </html>
