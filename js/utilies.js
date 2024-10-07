@@ -3,7 +3,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const addDonet = getInputById("forNoakhali");
-    if (addDonet === NaN && addDonet < 0) {
+    if (!isNaN(addDonet) && addDonet > 0) {
       const donateAmount = getInputTextById("already-donate");
       const totalDonateForNoakhali = addDonet + donateAmount;
       document.getElementById("already-donate").innerText =
@@ -11,6 +11,16 @@ document
       const forBdBalance = getInputTextById("bd-balance");
       const total = forBdBalance - addDonet;
       document.getElementById("bd-balance").innerText = total;
+      const div = document.createElement("div");
+
+      div.innerHTML = ` <p>${addDonet} Donate for Flood at Noakhali,Bangladesh.</p>
+     `;
+
+      document.getElementById("noakhali-donate").appendChild(div);
+      const currentTime = getCurrentTime();
+      document.getElementById(
+        "realTime1"
+      ).textContent = `last donate details:${currentTime}`;
     } else {
       alert("please enter amount!");
     }
@@ -21,7 +31,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const addDonet = getInputById("forFeni");
-    if (addDonet === NaN && addDonet < 0) {
+    if (!isNaN(addDonet) && addDonet > 0) {
       const donateAmount = getInputTextById("forFeniAlredy");
       const totalDonateForNoakhali = addDonet + donateAmount;
       document.getElementById("forFeniAlredy").innerText =
@@ -29,6 +39,16 @@ document
       const forBdBalance = getInputTextById("bd-balance");
       const total = forBdBalance - addDonet;
       document.getElementById("bd-balance").innerText = total;
+      const div = document.createElement("div");
+
+      div.innerHTML = ` <p>${addDonet} Donate for Flood at Feni,Bangladesh.</p>
+     `;
+
+      document.getElementById("forDonateFeniadd").appendChild(div);
+      const currentTime = getCurrentTime();
+      document.getElementById(
+        "realTime2"
+      ).textContent = `last donate details:${currentTime}`;
     } else {
       alert("please enter amount!");
     }
@@ -39,7 +59,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const addDonet = getInputById("forQouta");
-    if (addDonet === NaN && addDonet < 0) {
+    if (!isNaN(addDonet) && addDonet > 0) {
       const donateAmount = getInputTextById("already-qouta");
       const totalDonateForNoakhali = addDonet + donateAmount;
       document.getElementById("already-qouta").innerText =
@@ -47,6 +67,16 @@ document
       const forBdBalance = getInputTextById("bd-balance");
       const total = forBdBalance - addDonet;
       document.getElementById("bd-balance").innerText = total;
+      const div = document.createElement("div");
+
+      div.innerHTML = ` <p>${addDonet} Donate for Quota Movement,Bangladesh.</p>
+     `;
+
+      document.getElementById("forDonateQouta").appendChild(div);
+      const currentTime = getCurrentTime();
+      document.getElementById(
+        "realTime3"
+      ).textContent = `last donate details:${currentTime}`;
     } else {
       alert("please enter amount!");
     }

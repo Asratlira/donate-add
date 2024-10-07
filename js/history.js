@@ -1,3 +1,6 @@
+document.getElementById("donation-btn1").addEventListener("click", function () {
+  showSection("donate-form");
+});
 document.getElementById("history-btn").addEventListener("click", function () {
-  window.location.href = "blog.html";
+  showSection("transaction-form");
 });
